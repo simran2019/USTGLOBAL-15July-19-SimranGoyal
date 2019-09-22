@@ -1,0 +1,30 @@
+package com.ustg.essPortal;
+
+import java.util.Scanner;
+
+public class Operation {
+	static Scanner sc = new Scanner(System.in);
+
+	static int i;
+
+	public static void main(String[] args) {
+		
+		System.out.println("Press 1 to register employee");
+		System.out.println("Press 2 to login");
+		i = sc.nextInt();
+		
+		
+		
+		switch(i) {
+		
+		case 1:
+			String Query = "insert into EmployeeInfo (Employee_ID=:Employee_ID,Employee_Name=:Employee_Name,Employee_Type=:Employee_Type,Email=:Email,Password=:Password");
+			
+		}
+
+
+
+
+	}
+
+}

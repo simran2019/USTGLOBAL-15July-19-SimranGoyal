@@ -1,0 +1,26 @@
+package com.ustg.essPortal.dto;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "Employee_Info")
+public class EmployeeInfo {
+	
+	@Id
+	@Column
+	private int Employee_ID;
+	@Column
+	private String Employee_Name;
+	@Column
+	private String Employee_Type;
+	@Column
+	private String Email;
+	@Column
+	private String Password;
+	
+	
+
+}

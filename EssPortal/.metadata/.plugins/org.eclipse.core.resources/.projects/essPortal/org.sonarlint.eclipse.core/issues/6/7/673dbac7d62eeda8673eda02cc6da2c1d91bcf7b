@@ -1,0 +1,13 @@
+
+‡squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(†¸™èH	RMINORZ
+CODE_SMELL
+Šsquid:S00116"VRename this field "Employee_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(þž‡õ8¬á£•Õ-HRMINORZ
+CODE_SMELL
+Œsquid:S00116"XRename this field "Employee_Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–ÜÌÂ8¬á£•Õ-HRMINORZ
+CODE_SMELL
+‘squid:S00116"XRename this field "Employee_Type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öÌÛ·ùÿÿÿÿ8¬á£•Õ-HRMINORZ
+CODE_SMELL
+„squid:S00116"PRename this field "Email" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áï»‚8¬á£•Õ-HRMINORZ
+CODE_SMELL
+Œsquid:S00116"SRename this field "Password" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬›™Âûÿÿÿÿ8¬á£•Õ-HRMINORZ
+CODE_SMELL

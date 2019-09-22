@@ -1,0 +1,29 @@
+package com.ustg.essPortal;
+
+import java.util.Scanner;
+
+public class Operation {
+	Scanner sc = new Scanner(System.in);
+	
+	Static int i ;
+	
+
+	public static void main(String[] args) {
+		
+		System.out.println("Press 1 to register employee");
+		System.out.println("Press 2 to login");
+		
+		
+		
+		switch(i) {
+		
+		case 1:
+			
+		}
+
+
+
+
+	}
+
+}

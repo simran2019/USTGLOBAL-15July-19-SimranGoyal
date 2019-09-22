@@ -1,0 +1,5 @@
+package com.ustg.essPortal.dto;
+
+public class LeaveInfo {
+
+}

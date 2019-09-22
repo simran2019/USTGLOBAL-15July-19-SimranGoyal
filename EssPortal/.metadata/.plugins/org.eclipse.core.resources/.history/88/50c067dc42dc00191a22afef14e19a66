@@ -1,0 +1,53 @@
+package com.ustg.essPortal;
+
+import java.util.ArrayList;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+
+import com.ustg.essPortal.dto.EmployeeInfo;
+import com.ustg.essPortal.dto.LeaveInfo;
+
+public class DataTable {
+
+	public static void main(String[] args) {
+		
+		EntityManagerFactory entityManagerFactory = null;
+		EntityManager entityManager = null;
+		EntityTransaction entityTransaction = null;
+		
+		LeaveInfo lInfo = new LeaveInfo();
+		lInfo.setEmployee_ID(1);
+		lInfo.setLeave_Date("25/09/2019");
+		lInfo.setLeave_Status("pending");
+		
+		LeaveInfo lInfo1 = new LeaveInfo();
+		lInfo1.setEmployee_ID(2);
+		lInfo1.setLeave_Date("29/09/2019");
+		lInfo1.setLeave_Status("Appored");
+		
+		LeaveInfo lInfo2 = new LeaveInfo();
+		lInfo2.setEmployee_ID(1);
+		lInfo2.setLeave_Date("24/09/2019");
+		lInfo2.setLeave_Status("Rejected");
+		
+		ArrayList<LeaveInfo> leave = new ArrayList<LeaveInfo>();
+		leave.add(lInfo);
+		leave.add(lInfo1);
+		leave.add(lInfo2);
+		
+		
+		
+		EmployeeInfo emInfo = new EmployeeInfo();
+		
+		emInfo.setEmployee_ID(1);
+		emInfo.setEmployee_Name("Simran");
+		emInfo.setEmployee_Type("Employee");
+		emInfo.setEmail("sim23goy@gmail.com");
+		emInfo.setPassword("simu");
+		emInfo.setLI(lI);
+
+	}
+
+}

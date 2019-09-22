@@ -1,0 +1,126 @@
+package com.ustg.essPortal;
+
+import java.util.List;
+import java.util.Scanner;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+import javax.persistence.Query;
+
+import com.ustg.essPortal.dto.EmployeeInfo;
+import com.ustg.essPortal.dto.LeaveInfo;
+
+public class Operation {
+	static Scanner sc = new Scanner(System.in);
+
+	static int i;
+	static String x;
+
+	public static void main(String[] args) {
+
+		System.out.println("Press 1 to register employee");
+		System.out.println("Press 2 to login");
+		i = sc.nextInt();
+
+
+
+		switch(i) {
+
+		case 1:
+			
+			EntityManagerFactory entityManagerFactory = null;
+			EntityManager entityManager = null;
+			
+			entityManagerFactory = Persistence.createEntityManagerFactory("TestPersistence");
+			entityManager = entityManagerFactory.createEntityManager();
+			
+			EmployeeInfo em = new EmployeeInfo();
+			System.out.println("enter the email = ");
+			em.setEmail(sc.nextLine());
+			System.out.println("enter the password = ");
+			em.setPassword(sc.nextLine());
+			System.out.println("enter the eId = ");
+			em.setEmployee_ID(sc.nextInt());
+			System.out.println("enter the Type = ");
+			em.setEmployee_Type(sc.nextLine());
+			System.out.println("enter the name =");
+			em.setEmployee_Name(sc.nextLine());
+			
+			
+			
+		break;
+		
+		case 2:
+		
+
+			EntityManagerFactory entityManagerFactory1 = null;
+			EntityManager entityManager1 = null;
+			
+			entityManagerFactory1 = Persistence.createEntityManagerFactory("TestPersistence");
+			entityManager1= entityManagerFactory1.createEntityManager();
+			
+			EmployeeInfo em1 = new EmployeeInfo();
+			System.out.println("enter the id  = ");
+			em1.setEmployee_ID(sc.nextInt());
+			System.out.println("enter the password = ");
+			em1.setPassword(sc.nextLine());
+			
+			
+			String Employee_Type = null;
+			System.out.println("enter the type = ");
+			em1.setEmployee_Type(sc.nextLine());
+			
+			if(Employee_Type == "Manager") {
+				
+				System.out.println("press 1 for show thw leave request=");
+				System.out.println("press 2 for see Approve/Reject request=");
+				int y = sc.nextInt();
+				
+				switch(y) {
+				
+				case 1:
+					String jpql = "from LeaveInfo";
+					Query query = entityManager1.createQuery(jpql);
+					List<LeaveInfo> info = query.getResultList();
+					
+					for(LeaveInfo leaveinfo : info ) {
+						System.out.println(leaveinfo);
+					}
+					break;
+					
+				case 2:
+					String jpql = "from LeaveInfo";
+					Query query = entityManager1.createQuery(jpql);
+					List<LeaveInfo> info = query.getResultList();
+					
+					for(LeaveInfo leaveinfo : info ) {
+						System.out.println(leaveinfo);
+					}
+				}
+				
+				
+				
+				
+				if(Employee_Type == "Employee") {
+					
+				}
+			}
+			
+			
+			break;
+		
+			}
+		
+
+
+
+		}
+
+
+
+
+	}
+
+

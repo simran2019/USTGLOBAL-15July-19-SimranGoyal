@@ -1,0 +1,9 @@
+<div class="col-md-3 mt-4 float-left" >
+    <div class="col-md-12 card card-body">
+    <div *ngFor = "let car of Car">
+        <img src="{{car.image}}" alt="this is a image" (click) = 'sendDetails(car)'>
+        <h4>{{car.description}}</h4>
+    </div>
+</div>
+</div>
+<app-carchild  [parData] = 'info'></app-carchild>

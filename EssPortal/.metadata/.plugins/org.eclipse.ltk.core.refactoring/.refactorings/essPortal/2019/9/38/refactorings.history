@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.ustg.essPortal.dto.EssPortal&apos; to &apos;EmployeeInfo&apos;&#x0D;&#x0A;- Original project: &apos;essPortal&apos;&#x0D;&#x0A;- Original element: &apos;com.ustg.essPortal.dto.EssPortal&apos;&#x0D;&#x0A;- Renamed element: &apos;com.ustg.essPortal.dto.EmployeeInfo&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;EssPortal&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.ustg.essPortal.dto{EssPortal.java[EssPortal" matchStrategy="1" name="EmployeeInfo" qualified="false" references="true" similarDeclarations="false" stamp="1569049911167" textual="false" version="1.0"/>
+</session>

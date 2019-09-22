@@ -1,0 +1,80 @@
+
+r
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÃÜ¯¡üÿÿÿÿ8íïö˜Õ-H¿RMAJORZ
+CODE_SMELL
+n"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(ìúÇV8Ó£ì–Õ-HHRCRITICALZ
+CODE_SMELL
+p
+squid:S106"9Replace this use of System.out or System.err by a logger.(’Òôûùÿÿÿÿ8ùúÖ—Õ-HgRMAJORZ
+CODE_SMELL
+u"squid:SwitchLastCaseIsDefaultCheck{""Add a default case to this switch.(˜ãèÿşÿÿÿÿ8íïö˜Õ-HÀRCRITICALZ
+CODE_SMELL
+p
+squid:S106L"9Replace this use of System.out or System.err by a logger.(¯¸ÿÿÿÿÿÿ8ùúÖ—Õ-HlRMAJORZ
+CODE_SMELL
+q
+squid:S106U"9Replace this use of System.out or System.err by a logger.(¯Ÿ±Õùÿÿÿÿ8…í˜˜Õ-H©RMAJORZ
+CODE_SMELL
+q
+squid:S106N"9Replace this use of System.out or System.err by a logger.(êÊ–ùÿÿÿÿ8ëšş˜Õ-HÉRMAJORZ
+CODE_SMELL
+vsquid:S2583X"DChange this condition so that it does not always evaluate to "false"(’¤‹úÿÿÿÿ8¹¼ñ—Õ-H’RMAJORZBUG
+p
+squid:S106"9Replace this use of System.out or System.err by a logger.(„Û¿Ãùÿÿÿÿ8Ó£ì–Õ-HFRMAJORZ
+CODE_SMELL
+ksquid:S4973X"9Use the "equals" method if value comparison was intended.(’¤‹úÿÿÿÿ8…í˜˜Õ-H¤RMAJORZBUG
+p"squid:SwitchLastCaseIsDefaultCheck^""Add a default case to this switch.(ŒÂœÊ8…í˜˜Õ-H§RCRITICALZ
+CODE_SMELL
+‡squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(õø¡ÀHARMINORZ
+CODE_SMELL
+l
+squid:S1060"9Replace this use of System.out or System.err by a logger.(œÖã®8¦“ğ—Õ-HÒRMAJORZ
+CODE_SMELL
+q
+squid:S106*"9Replace this use of System.out or System.err by a logger.(¡Ï•£ûÿÿÿÿ8…í˜˜Õ-H¦RMAJORZ
+CODE_SMELL
+‰squid:S3776"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(Çµí‘8…í˜˜Õ-H¥RCRITICALZ
+CODE_SMELL
+r
+squid:S106ˆ"9Replace this use of System.out or System.err by a logger.(»ÛøÀüÿÿÿÿ8íïö˜Õ-HÓRMAJORZ
+CODE_SMELL
+„squid:S1301{"KReplace this "switch" statement by "if" statements to increase readability.(˜ãèÿşÿÿÿÿ8íïö˜Õ-H»RMINORZ
+CODE_SMELL
+q
+squid:S106,"9Replace this use of System.out or System.err by a logger.(êÊ–ùÿÿÿÿ8ùúÖ—Õ-HÑRMAJORZ
+CODE_SMELL
+p
+squid:S106Z"9Replace this use of System.out or System.err by a logger.(ÃØ×­ıÿÿÿÿ8ùúÖ—Õ-HjRMAJORZ
+CODE_SMELL
+esquid:S4973t"9Use the "equals" method if value comparison was intended.(ºŞŒj8¦“ğ—Õ-H†RMAJORZBUG
+squid:S1301^"KReplace this "switch" statement by "if" statements to increase readability.(ŒÂœÊ8…í˜˜Õ-H£RMINORZ
+CODE_SMELL
+l
+squid:S106p"9Replace this use of System.out or System.err by a logger.(ÔÙ„8…í˜˜Õ-H¨RMAJORZ
+CODE_SMELL
+q
+squid:S106v"9Replace this use of System.out or System.err by a logger.(ø…Œûÿÿÿÿ8ùúÖ—Õ-HÕRMAJORZ
+CODE_SMELL
+q
+squid:S106w"9Replace this use of System.out or System.err by a logger.(Ñ¾‡‰ıÿÿÿÿ8¤Ì€˜Õ-H¢RMAJORZ
+CODE_SMELL
+†squid:S00117T"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñÍÂã8¦“ğ—Õ-H‡RMINORZ
+CODE_SMELL
+q
+squid:S106."9Replace this use of System.out or System.err by a logger.(ù©‡Áùÿÿÿÿ8áˆ™Õ-HÓRMAJORZ
+CODE_SMELL
+k
+squid:S106["9Replace this use of System.out or System.err by a logger.(é§Óî8Ó£ì–Õ-HGRMAJORZ
+CODE_SMELL
+k
+squid:S1062"9Replace this use of System.out or System.err by a logger.(çµ¬T8íïö˜Õ-H¾RMAJORZ
+CODE_SMELL
+q
+squid:S106f"9Replace this use of System.out or System.err by a logger.(—óóÅşÿÿÿÿ8ùúÖ—Õ-HÔRMAJORZ
+CODE_SMELL
+k
+squid:S106"9Replace this use of System.out or System.err by a logger.(ıÄçÎ8ùúÖ—Õ-HfRMAJORZ
+CODE_SMELL
+_squid:S11487"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8º«Í›Õ-HÖRMINORZVULNERABILITY
+}squid:S1301"KReplace this "switch" statement by "if" statements to increase readability.(ìúÇV8Ó£ì–Õ-HERMINORZ
+CODE_SMELL
