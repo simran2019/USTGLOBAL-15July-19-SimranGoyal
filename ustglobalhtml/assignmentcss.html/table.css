@@ -1,0 +1,17 @@
+table,tr,td,th{
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+p{
+    margin-left: 10%;
+    margin-bottom: 1%;
+}
+body{
+    margin-left: 40%;
+    margin-top: 20%;
+
+}
+table{
+    background-color: gray;
+width:50%;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin-left: 25%;
+            margin-right: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h6 id="error" onkeyup="validateForm">error please enter the valid information</h6> -->
+    <legend></legend>
+    <fieldset>
+        <form action="welcome.html" method="post">
+            <div><label for="">UserName</label></div>
+            <div><input onkeyup="validateForm()" type="text" name="uname" required></div>
+            <div id="name1"></div>
+            <div><label for="">password</label></div>
+            <div><input onkeyup="validateForm()" name="pass" type="password" required></div>
+            <br>
+            <div><input type="submit" value="login" name="login" disabled></div>
+        </form>
+    </fieldset>
+    <script src="/form.js"></script>
+</body>
+
+</html>

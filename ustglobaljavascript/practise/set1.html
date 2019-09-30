@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>set1</title>
+
+</head>
+<body>
+   
+      <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId" placeholder="enter a email" required>
+   <br>
+      <input type="password" class="pass" id="pass" minlength="5" maxlength="10" required placeholder="enter password"><span style="color: red">*</span>
+      <br>
+    <button type="button"  onclick="myFunction()" >submit</button>
+    <p id="click"></p>
+    <p id="click1"></p>
+    <button type="button"  onmousedown="myFun()" onmouseup="myFun2()">thanku</button>
+    <p id="click2"></p>
+    <p id="dis"></p>
+    <button type="button"  onclick="display()" >submit</button>
+    <script>
+            function myFunction(){
+                if(email.validity.valueMissing){
+             document.getElementById("click").innerHTML="fill the email";
+                }else{
+                    document.getElementById("click").innerHTML="done";
+                }
+                if(pass.validity.valueMissing ){
+             document.getElementById("click1").innerHTML="fill the password";
+                              }else{
+                    document.getElementById("click1").innerHTML="done";
+                }
+            }
+            document.getElementById("click1").style.color = 'red';
+            document.getElementById("click").style.color = 'red';
+
+            function myFun(){
+                document.getElementById("click2").innerHTML="how are you";
+             }
+             function myFun2(){
+                document.getElementById("click2").innerHTML="";
+             }
+             document.getElementById("dis").innerHTML=
+              `<p>hii i love u and you are mine only</p>`
+
+             let para= document.createElement("p")
+             para.textContent="do you love me ?????";
+             document.body.appendChild(para);
+para.style.color='purple';
+para.style.fontSize='50px';
+
+
+function display(){
+    var i ;
+    var cars=["bmw","volvo","shift","indigo"]
+// for(i=0;i<cars.length;i++){
+document.getElementById("dis").innerHTML=cars;
+// }
+console.log(cars);     // for print in the console not compulsory to use
+}
+
+
+
+
+
+            
+             
+
+                
+                </script>
+</body>
+</html>
