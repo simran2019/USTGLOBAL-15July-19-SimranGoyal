@@ -1,0 +1,29 @@
+<div class="container">
+    <input type="search" class="form-control" [(ngModel)]='this.FirebaseService.selectedUser.user'>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Model</th>
+                <th>Brand</th>
+                <th>year of release</th>
+                <th>units solds</th>
+                <th>Costs</th>
+                <th>Delete</th>
+                <th>Update</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor= 'let prod of firebaseService.users'> 
+                <td>{{user.model }}</td>
+                <td>{{user.brand }}</td>
+                <td>{{user.yearofrelease }}</td>
+                <td>{{user.unitssolds }}</td>
+                <td>{{user.costs }}</td>
+                <td><button class="btn btn-warning" (click)='updateUser(user)'>Update</button></td>
+                <td><button class="btn btn-danger" (click)='deleteUser(user)'>Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    </div>
+    

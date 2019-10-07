@@ -1,0 +1,42 @@
+<div style="background-color: cornflowerblue">
+<div class="row">
+            <div class="col-md-3 mt-4">
+        <div class="card card-body" *ngFor="let technology of Technology">
+            <a href=""><img src="{{technology.urlToImage}}" alt="" class="card-img-top float-left"></a>
+            <h3>{{technology.title}}</h3>
+            <p>{{technology.description}}</p>
+            <a href="{{technology.url}}" class="btn btn-primary"></a>
+    click here for more info....
+        </div>
+    
+    
+</div>
+
+<div class="col-md-6 mt-4">
+
+    
+   
+        <div class="card card-body" *ngFor="let general of General">
+            <a href=""><img src="{{general.urlToImage}}" alt="" class="card-img-top float-left"></a>
+            <h3>{{general.title}}</h3>
+            <p>{{general.description}}</p>
+            <a href="{{general.url}}" class="btn btn-primary"></a>
+    click here for more info....
+        </div>
+    
+    
+</div>
+
+<div class="col-md-3 mt-4">
+    
+        <div class="card card-body" *ngFor="let sports of Sports">
+            <a href=""><img src="{{sports.urlToImage}}" alt="" class="card-img-top float-left"></a>
+            <h3>{{sports.title}}</h3>
+            <p>{{sports.description}}</p>
+            <a href="{{sports.url}}" class="btn btn-primary"></a>
+    click here for more info....
+        </div>
+        
+</div>
+</div>
+</div>

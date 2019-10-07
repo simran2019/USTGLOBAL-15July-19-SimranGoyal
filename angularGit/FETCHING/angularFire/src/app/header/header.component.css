@@ -1,0 +1,9 @@
+a{
+    color: black;
+}
+ li a:hover{
+    color: white;
+}
+li a:hover:active{
+    color: palevioletred;
+}

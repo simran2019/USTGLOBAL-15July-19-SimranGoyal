@@ -1,0 +1,13 @@
+<div class="col-md-4 offset-4 mt-4">
+    <h3 class="text-center">Add product!!</h3>
+<form #UserForm='ngForm' (ngSubmit)='postProduct(UserForm)'>
+    <input type="hidden" name="id" #id='ngModel' ngModel>
+    <input type="Url" name="img" #img='ngModel' [(ngModel)]='firebaseService.selectedUser.img' placeholder="enter url" class="form-control" >
+    <input type="text" name="Discription" #Discription='ngModel' [(ngModel)]='firebaseService.selectedUser.Discription' placeholder="enter brand" class="form-control">
+    <input type="text" name="Details" #Detail='ngModel' [(ngModel)]='firebaseService.selectedUser.Detail' placeholder="enter year" class="form-control">
+
+    <button type="submit" class="btn btn-outline-success" >submit</button>
+</form>
+</div>
+
+

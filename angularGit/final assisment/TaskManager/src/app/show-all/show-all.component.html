@@ -1,0 +1,19 @@
+<table class="table table-bordered container">
+    <thead>
+        <tr>
+            
+            <th >StartDate</th>
+            <th>EndDate</th>
+            <th>Task</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let info of service.taskinfo'>
+                
+            <td>{{info.start_date}}</td>
+            <td>{{info.end_date}}</td>
+            <td>{{info.task}}</td>
+           
+        </tr>
+    </tbody>
+</table>

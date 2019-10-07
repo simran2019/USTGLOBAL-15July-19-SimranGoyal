@@ -1,0 +1,14 @@
+<div class="container">
+<div class="col-md-7 mt-5 card card-body" style="background-color: azure">
+
+<form action="" method="POST" #form='ngForm' (ngSubmit)='addtask(form)'>
+    <legend>Add</legend>
+
+    <div class="form-group">
+      <label for="">Task</label>
+      <input type="text" name="task" id="task" class="form-control" placeholder="task" aria-describedby="helpId" #task='ngModel' ngModel>
+    </div>
+    <button type="submit" class="btn btn-success float-right">Add</button>
+</form>
+</div>
+</div>

@@ -1,0 +1,45 @@
+
+ <h1>{{name}}</h1>                        <!-- known as string interpolation -->
+<h1>{{5+5}}</h1> 
+
+ <img src="{{imgUrl}}" alt="">   <!--string interpolation  {{}} -->
+
+<img [src]="imgUrl" alt="">     <!--property binding []-->
+ 
+ <h1 [class]="textClasses">{{name}}</h1>     <!--class binding []-->
+
+<h1 [class.bg-danger] = 'redcolor'>{{5+5}}</h1>  <!--class binding []-->
+
+ <p [style.color]=" paragraphStyle">                   <!--style binding []-->
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, deserunt.
+</p>
+<p [style.background] = "  isApplude ? 'red':'blue' "[style.padding]='padding'>Lorem ipsum dolor sit amet.          <!--style binding []-->
+
+</p>
+<table class="table table-bordered"> 
+    <thead>
+        <th [attr.colspan]="columnSpan">students</th>         <!--attribute binding []-->
+    </thead>
+    <tbody>
+        <tr>
+        <td>1</td>
+        <td>balakrishna</td> 
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>simran</td>
+    </tr>
+    <tr>
+            <td>3</td>
+            <td>simi</td>
+        </tr>
+        <tr>
+                <td>4</td>
+                <td>simu</td>
+            </tr>
+    </tbody>
+</table> 
+
+
+
+

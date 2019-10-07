@@ -1,0 +1,7 @@
+<h1 [ngClass]='{ "bg-success" :"isSuccess", "text-white" :"isSuccess"} '>hello class directive</h1>
+<h1 [ngClass]='["text-danger","bg-dark","mt-5"] '>hello class directive</h1> 
+<h1 [ngClass]='classesArray '>hello class directive</h1> 
+
+<h1 [ngStyle]="{'padding' : isSuccess? '60px':'0px',   'background':isSuccess? 'green': 'pink'}">ngStyle directive</h1>
+
+<p appMyDirective>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim natus adipisci vero vitae rem earum. </p>

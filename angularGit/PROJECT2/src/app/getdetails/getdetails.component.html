@@ -1,0 +1,31 @@
+
+<div class="col-md-10  offset-1">
+
+<div style="background-color: darkgray">
+
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Login</th>
+        <th scope="col">Image</th>
+        <th scope="col">ReposId</th>
+        
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr   *ngFor="let info of user ">
+        <td>{{info.id}}</td>
+        <td>{{info.login | titlecase}}</td>
+        <td><img src="{{info.avatar_url}}" alt="" height="50%" width="50%"></td>
+        <td> <a href="{{info.repos_url}}">Here its a repos_url link</a></td>
+        
+        <td> <button type="reset" (click) = 'delete(info)' class='btn btn-danger'>DELETE</button></td>
+      </tr>
+      
+
+    </tbody>
+  </table>
+</div>
+</div>

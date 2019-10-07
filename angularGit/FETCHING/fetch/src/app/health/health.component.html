@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="card card-body" *ngFor="let health of Health">
+        <a href=""><img src="{{health.urlToImage}}" alt=""></a>
+        <h3>{{health.title}}</h3>
+        <p>{{health.description}}</p>
+        <a href="{{health.url}}" class="btn btn-primary"></a>
+click here for more info....
+    </div>
+</div>
+
+
+

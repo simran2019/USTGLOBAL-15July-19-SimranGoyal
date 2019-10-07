@@ -1,0 +1,41 @@
+<div class="col-md-4 offset-md-4 mt-5">
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor='let user of users'>{{user.name}}</li>
+    </ul>
+</div>
+
+ <ul>
+    <li *ngFor= 'let user of users'>{{user.city}}</li>
+</ul>
+<div class="container">
+       
+              
+                <!-- <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                          <span *ngIf="condition" class="alert alert-success ">User removed successfully</span>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div> -->
+              
+   
+<table  class="table  mt-5 table-bordered table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th>id</th>
+            <th>name</th>
+
+            <th>city</th>
+            <th>Delete</th>
+        </tr>
+    </thead >
+    <tbody class="bg-info">
+        <tr *ngFor='let user of users'>
+           <td> {{user.id}}</td>
+           <td> {{user.name}}</td>
+           <td> {{user.city}}</td>
+           <td><button class="btn btn-outline-danger" (click)='removeUser(user)'>Remove</button></td>
+           
+        </tr>
+    </tbody>
+</table>
+</div>

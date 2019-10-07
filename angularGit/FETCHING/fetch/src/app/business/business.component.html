@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="card card-body" *ngFor="let business of Business">
+        <a href=""><img src="{{business.urlToImage}}" alt=""></a>
+        <h3>{{business.title}}</h3>
+        <p>{{business.description}}</p>
+        <a href="{{business.url}}" class="btn btn-primary"></a>
+click here for more info....
+    </div>
+</div>
+

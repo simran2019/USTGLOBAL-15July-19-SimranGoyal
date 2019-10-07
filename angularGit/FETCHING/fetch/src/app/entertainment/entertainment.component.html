@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="card card-body" *ngFor="let entertainment of Entertainment">
+        <img src="{{entertainment.urlToImage}}" alt="">
+        <h3>{{entertainment.title}}</h3>
+        <p>{{entertainment.description}}</p>
+        <a href="{{entertainment.url}}" class="btn btn-primary"></a>
+click here for more info....
+    </div>
+</div>
+
+

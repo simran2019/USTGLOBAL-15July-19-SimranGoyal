@@ -1,0 +1,9 @@
+tr:hover{
+    background-color: chocolate;
+}
+th{
+    background-color: grey
+}
+tr:nth-child(odd){
+    background-color: aqua;
+}

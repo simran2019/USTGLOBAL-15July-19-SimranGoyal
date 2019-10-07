@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="card card-body" *ngFor="let general of General">
+        <a href=""><img src="{{general.urlToImage}}" alt=""></a>
+        <h3>{{general.title}}</h3>
+        <p>{{general.description}}</p>
+        <a href="{{general.url}}" class="btn btn-primary"></a>
+click here for more info....
+    </div>
+</div>
+
+

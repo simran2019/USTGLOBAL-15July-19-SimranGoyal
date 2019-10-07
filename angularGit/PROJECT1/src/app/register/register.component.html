@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="col-md-6 offset-2 mt-5">
+        <div style="border: 1px solid black ; padding: 10px ; background-color: burlywood" >
+
+
+<!--register form-->
+
+        <form name="register" #register='ngForm' (ngSubmit)="printform(register)">
+                
+
+            <h4 style="text-align :center">Registration Form</h4>
+            <!--username-->
+
+            <div class="form-group">
+              <label for="username">User Name</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter valid email id" name="email" #email = 'ngModel' ngModel email required>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              <div *ngIf = "email.touched && email.invalid">
+              <div *ngIf = "email.errors.required" style="color: red">Email-Id is required</div>
+            </div>
+            </div>
+
+            <!--password field-->
+
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Password"  name="password" #password='ngModel' ngModel required password minlength="6">
+              <div *ngIf = "password.touched && password.invalid">
+        <div *ngIf = "password.errors.minlength" style="color: red">Minimum length is 6</div>
+        <div *ngIf = "password.errors.required" style="color: red">This field is required</div>
+              </div>
+            </div>
+           
+            <button type="submit" class="btn btn-primary" [disabled] = 'register.invalid'>Submit</button>
+       
+          </form>
+     </div>
+        
+    </div>
+</div>
+
+
+

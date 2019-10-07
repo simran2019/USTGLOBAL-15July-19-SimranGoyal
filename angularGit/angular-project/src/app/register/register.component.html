@@ -1,0 +1,69 @@
+
+<div class="container card card-body col-md-6" style="  color:yellow ">
+
+<form action="#"  [formGroup]='registerForm'  (ngSubmit)='printForm(registerForm)'>
+  <legend class="text-center">Register Form</legend>
+
+  
+        <div class="form-group">
+
+        <label for="username">UserName</label>
+        <input type="text" formControlName="username" name="username" id="" class="form-control" placeholder="enter username" >
+        <div  *ngIf='username.invalid && username.touched'>
+          <div class="alert alert-danger" *ngIf='username.errors.minlength'>minimum length 4</div>
+          <div class="alert alert-danger" *ngIf='username.errors.required'>this field is required</div>
+        </div>
+      </div>
+
+
+      
+      <div class="form-group">
+        <label for="phno">Phone No</label>
+        <input type="tel" class="form-control" formControlName="phno" name="phno" id="" placeholder="enter phone number" name="phno" >
+      
+      <div  *ngIf='phno.invalid && phno.touched'>
+        <div class="alert alert-danger" *ngIf='phno.errors.minlength'>min length is 10</div>
+        <div class="alert alert-danger" *ngIf='phno.errors.minlength'>this field is required</div>
+      </div>
+    </div>
+
+      <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" name="password" id="" formControlName="password" placeholder="enter password">
+          </div>
+
+          <div  *ngIf='password.invalid && password.touched'>
+            <div class="alert alert-danger" *ngIf='password.errors.minLength'>minimum length is 6</div>
+            <div class="alert alert-danger" *ngIf='password.errors.required'>this field is required</div>
+          </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Email" formControlName="email" name="email">
+      
+      <div  *ngIf='email.invalid && email.touched'>
+        <div class="alert alert-danger" *ngIf='email.errors.minLength'>minimum length is 5</div>
+        <div class="alert alert-danger" *ngIf='email.errors.noSpace'>No space accepted</div>
+        <div class="alert alert-danger" *ngIf='email.errors.required'>this field is required</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="inputAddress">Address</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+
+      <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputCity">City</label>
+        <input type="text" class="form-control" id="inputCity">
+      </div>
+      </div>
+    
+    <div>
+    <button type="submit" class="btn btn-primary">Reset</button>
+    <button type="submit" class="btn btn-primary"  (ngSubmit)='printForm(registerForm)'>Sign in</button>
+  </div>
+
+  </form>
+</div>

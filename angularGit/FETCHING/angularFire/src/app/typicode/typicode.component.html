@@ -1,0 +1,40 @@
+<div class="container mt-5">
+<table class="table table-bordered" >
+        <thead>
+          <tr >
+            <th scope="col" >ID</th>
+            <th scope="col" >USER ID</th>
+            <th scope="col" >TITLE</th>
+            <th scope="col" >BODY</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let typi of typicode">
+            <td>{{typi.id}}</td>
+             <td>{{typi.userId}}</td>
+            <td>{{typi.title}}</td>
+            <td>{{typi.body}}</td>
+          </tr>
+         
+        </tbody>
+      </table>
+    </div>
+
+
+<!-- 
+<div class="container ">
+        <div class="card card-body" *ngFor="let typi of typicode">
+            <a href=""><img src="{{typi.id}}" alt="" class="card-img-top float-left"></a>
+            <h3>{{typi.title}}</h3>
+            <h3>{{typi.userId}}</h3>
+            
+            <a href="{{typi.body}}" class="btn btn-primary"></a>
+    click here for more info....
+        </div>
+    </div> -->
+    
+    
+    
+    
+    
+    

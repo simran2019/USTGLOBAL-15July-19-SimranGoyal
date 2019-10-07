@@ -1,0 +1,50 @@
+
+<div class="col-md-6 offset-3 mt-5 card card-body">
+
+    <h3 class="text-center">Please Login</h3>
+    <form action="#" name="loginForm" #loginForm='ngForm' (ngSubmit)='printForm(loginForm)'>
+<div class="form-group ">
+  <label for="username">UserName</label>
+  <input type="email" name="username" id="username" #username="ngModel" ngModel  minlength="5" required email class="form-control" placeholder="enter user name" aria-describedby="helpId">
+  <div class="alert alert-darnger" *ngIf='username.invalid && username.touched'>
+  <div class="alert alert-danger" *ngIf='username.errors.email'>this field only take email</div>
+  <div class="alert alert-danger" *ngIf='username.errors.minlength'>minimum length is 5</div>
+</div>
+</div>
+
+<div class="form-group">
+  <label for="password">Password</label>
+  <input type="password" class="form-control"  name="password" id="password" placeholder="enter password" #password="ngModel" ngModel required minlength="4" password>
+  <div class="alert alert-darnger" *ngIf='password.invalid && password.touched'>
+  <div class="alert alert-danger" *ngIf='password.errors.minlength'>minimum length is 4</div>
+</div>
+</div>
+
+<div class="btn-group">
+<input name="login" id="" class="btn btn-outline-primary" type="submit" value="login" [disabled]='loginForm.invalid'>
+
+<input name="cancle" id="" class="btn btn-outline-danger offset-1" type="reset" value="cancle" >
+</div>
+</form>
+</div>
+
+
+<table class="table table-hover table-bordered table-dark">
+  <thead>
+    <tr>
+      <th>Index</th>
+      <th>UserName</th>
+      <th>Password</th>
+      <th>Button</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let user of users ; index as i'>
+      <td>{{i+1}}</td>
+      <td>{{user.username}}</td>
+      <td>{{user.password}}</td>
+      <td><button type="reset" (click)='delete(user)'>Delete</button></td>
+    </tr>
+    
+  </tbody>
+</table>

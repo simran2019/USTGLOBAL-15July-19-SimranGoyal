@@ -1,0 +1,15 @@
+<div class="col-md-4 offset-4 mt-4">
+    <h3 class="text-center">Add User!!</h3>
+<form #UserForm='ngForm' (ngSubmit)='search'>
+    <input type="id" name="id" #id='ngModel' ngModel>
+    <input type="text" name="model" #model='ngModel' [(ngModel)]='firebaseService.selectedUser.model' placeholder="enter model" class="form-control" >
+    <input type="text" name="brand" #brand='ngModel' [(ngModel)]='firebaseService.selectedUser.brand' placeholder="enter brand" class="form-control">
+    <input type="number" name="yearofrelase" #yearofrelase='ngModel' [(ngModel)]='firebaseService.selectedUser.yearofrelease' placeholder="enter year" class="form-control">
+    <input type="number" name="unitssold" #unitssold=ngModel [(ngModel)]='firebaseService.selectedUser.unitssold' placeholder="enter unitsold" class="form-control">
+    <input type="number" name="cost" #cost=ngModel [(ngModel)]='firebaseService.selectedUser.cost' placeholder="enter cost" class="form-control">
+    <button type="submit" class="btn btn-outline-success" >submit</button>
+    <button type="reset" class="btn btn-outline-danger">reset</button>
+</form>
+</div>
+
+
